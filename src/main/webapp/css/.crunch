@@ -1,0 +1,42 @@
+{
+	"files": {
+		"libreria.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "libreria.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": []
+		},
+		"estilos.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "estilos.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"estilos.less",
+				"grid.less",
+				"libreria.less"
+			]
+		}
+	}
+}

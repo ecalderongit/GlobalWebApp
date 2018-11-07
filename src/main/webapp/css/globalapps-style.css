@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+	font-family: 'Comfortaa', cursive !important;
+}
+
+.input-tex {
+
+	padding: 10px;  
+	border:1px solid #607D8B;
+	border-radius: 50px;
+	/* outline:none, es para eliminar la linea asul que tienen los inputs por defecto.*/
+	outline: none;
+	
+	display: inline-block;
+}
+.input-tex:hover {
+	background-color: #eee;
+	color: #FF3700;
+	/* outline:none, es para eliminar la linea asul que tienen los inputs por defecto.*/
+	outline: none;
+}
+.button-circle {
+		padding: 10px; 
+		color: #FF3700;
+		border:1px solid #607D8B;
+		border-radius: 50px;
+		background: #fff;
+		/* outline:none, es para eliminar la linea asul que tienen los inputs por defecto.*/
+		outline: none;
+		
+		display: inline-block;
+}
+
+
+.lnk{
+	color:#555;
+	padding: 15px;  
+	border:1px solid grey;
+	border-radius: 50px;
+	/* outline:none, es para eliminar la linea asul que tienen los inputs por defecto.*/
+	outline: none;
+
+	margin:15px;
+}
+.lnk:hover{
+	color:#555;
+	background: #ddd;
+	text-decoration:none;
+}
+
+ 
+.avatar {
+  object-fit: cover;
+  border-radius:50%;
+  width: 180px;
+  height: 180px;
+  margin:15px;
+}
+
+.main-title{
+	transition: none;
+    text-align: inherit;
+    line-height: 23px;
+    border-width: 0px;
+    margin: 9px 0px 0px;
+    padding: 0px;
+    letter-spacing: 0px;
+    font-weight: 100;
+    font-size: 21px;
+}
+
+
+.section{
+	border: 1px solid grey;
+	background-color: white;
+	margin-bottom: 20px;
+	
+}
+
+
+.color-hr{
+    border-top-color: #009933;
+    margin-top: 40px;
+    margin-bottom:40px;
+
+}
+.loginError{
+	margin-top: 20px;
+    color: #FF3700;
+}
+.loginErrorContainer{
+	width: 500px;
+}
+    

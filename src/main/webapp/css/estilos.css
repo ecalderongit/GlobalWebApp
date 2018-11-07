@@ -1,0 +1,918 @@
+/* VARIABLES */
+.container {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  /*asegura que el relleno y los bordes están incluidos en el ancho total y la altura del elemento*/
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.row {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  /*asegura que el relleno y los bordes están incluidos en el ancho total y la altura del elemento*/
+  position: relative;
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: table;
+}
+/*El total de las columnas es 12, para saber el tamaño de las otras 11, debemos aplicar regla de 3: n*100/12*/
+/*====================================================
+COLUMNAS
+=====================================================*/
+[class*="col-"] {
+  float: left;
+}
+/*grid*/
+@media (min-width: 992px) {
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.666666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.666666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.666666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.666666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  .offset-lg-12 {
+    margin-left: 100%;
+  }
+  .offset-lg-11 {
+    margin-left: 91.666666667%;
+  }
+  .offset-lg-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-lg-9 {
+    margin-left: 75%;
+  }
+  .offset-lg-8 {
+    margin-left: 66.666666667%;
+  }
+  .offset-lg-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-lg-6 {
+    margin-left: 50%;
+  }
+  .offset-lg-5 {
+    margin-left: 41.666666667%;
+  }
+  .offset-lg-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-lg-3 {
+    margin-left: 25%;
+  }
+  .offset-lg-2 {
+    margin-left: 16.666666667%;
+  }
+  .offset-lg-1 {
+    margin-left: 8.33333333%;
+  }
+  .push-lg-12 {
+    left: 100%;
+  }
+  .push-lg-11 {
+    left: 91.666666667%;
+  }
+  .push-lg-10 {
+    left: 83.33333333%;
+  }
+  .push-lg-9 {
+    left: 75%;
+  }
+  .push-lg-8 {
+    left: 66.666666667%;
+  }
+  .push-lg-7 {
+    left: 58.33333333%;
+  }
+  .push-lg-6 {
+    left: 50%;
+  }
+  .push-lg-5 {
+    left: 41.666666667%;
+  }
+  .push-lg-4 {
+    left: 33.33333333%;
+  }
+  .push-lg-3 {
+    left: 25%;
+  }
+  .push-lg-2 {
+    left: 16.666666667%;
+  }
+  .push-lg-1 {
+    left: 8.33333333%;
+  }
+  .pull-lg-12 {
+    right: 100%;
+  }
+  .pull-lg-11 {
+    right: 91.666666667%;
+  }
+  .pull-lg-10 {
+    right: 83.33333333%;
+  }
+  .pull-lg-9 {
+    right: 75%;
+  }
+  .pull-lg-8 {
+    right: 66.666666667%;
+  }
+  .pull-lg-7 {
+    right: 58.33333333%;
+  }
+  .pull-lg-6 {
+    right: 50%;
+  }
+  .pull-lg-5 {
+    right: 41.666666667%;
+  }
+  .pull-lg-4 {
+    right: 33.33333333%;
+  }
+  .pull-lg-3 {
+    right: 25%;
+  }
+  .pull-lg-2 {
+    right: 16.666666667%;
+  }
+  .pull-lg-1 {
+    right: 8.33333333%;
+  }
+}
+/*====================================================
+PANTALLA DE TABLE - SMALL (SM)
+=====================================================*/
+@media (max-width: 991px) and (min-width: 768px) {
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.666666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.666666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.666666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.666666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  .offset-md-12 {
+    margin-left: 100%;
+  }
+  .offset-md-11 {
+    margin-left: 91.666666667%;
+  }
+  .offset-md-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-md-9 {
+    margin-left: 75%;
+  }
+  .offset-md-8 {
+    margin-left: 66.666666667%;
+  }
+  .offset-md-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-md-6 {
+    margin-left: 50%;
+  }
+  .offset-md-5 {
+    margin-left: 41.666666667%;
+  }
+  .offset-md-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-md-3 {
+    margin-left: 25%;
+  }
+  .offset-md-2 {
+    margin-left: 16.666666667%;
+  }
+  .offset-md-1 {
+    margin-left: 8.33333333%;
+  }
+  .push-md-12 {
+    left: 100%;
+  }
+  .push-md-11 {
+    left: 91.666666667%;
+  }
+  .push-md-10 {
+    left: 83.33333333%;
+  }
+  .push-md-9 {
+    left: 75%;
+  }
+  .push-md-8 {
+    left: 66.666666667%;
+  }
+  .push-md-7 {
+    left: 58.33333333%;
+  }
+  .push-md-6 {
+    left: 50%;
+  }
+  .push-md-5 {
+    left: 41.666666667%;
+  }
+  .push-md-4 {
+    left: 33.33333333%;
+  }
+  .push-md-3 {
+    left: 25%;
+  }
+  .push-md-2 {
+    left: 16.666666667%;
+  }
+  .push-md-1 {
+    left: 8.33333333%;
+  }
+  .pull-md-12 {
+    right: 100%;
+  }
+  .pull-md-11 {
+    right: 91.666666667%;
+  }
+  .pull-md-10 {
+    right: 83.33333333%;
+  }
+  .pull-md-9 {
+    right: 75%;
+  }
+  .pull-md-8 {
+    right: 66.666666667%;
+  }
+  .pull-md-7 {
+    right: 58.33333333%;
+  }
+  .pull-md-6 {
+    right: 50%;
+  }
+  .pull-md-5 {
+    right: 41.666666667%;
+  }
+  .pull-md-4 {
+    right: 33.33333333%;
+  }
+  .pull-md-3 {
+    right: 25%;
+  }
+  .pull-md-2 {
+    right: 16.666666667%;
+  }
+  .pull-md-1 {
+    right: 8.33333333%;
+  }
+}
+/*====================================================
+PANTALLA DE PHONE - EXTRA SMALL (XS)
+=====================================================*/
+@media (max-width: 767px) and (min-width: 576px) {
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.666666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.666666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.666666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.666666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  .offset-sm-12 {
+    margin-left: 100%;
+  }
+  .offset-sm-11 {
+    margin-left: 91.666666667%;
+  }
+  .offset-sm-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-sm-9 {
+    margin-left: 75%;
+  }
+  .offset-sm-8 {
+    margin-left: 66.666666667%;
+  }
+  .offset-sm-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-sm-6 {
+    margin-left: 50%;
+  }
+  .offset-sm-5 {
+    margin-left: 41.666666667%;
+  }
+  .offset-sm-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-sm-3 {
+    margin-left: 25%;
+  }
+  .offset-sm-2 {
+    margin-left: 16.666666667%;
+  }
+  .offset-sm-1 {
+    margin-left: 8.33333333%;
+  }
+  .push-sm-12 {
+    left: 100%;
+  }
+  .push-sm-11 {
+    left: 91.666666667%;
+  }
+  .push-sm-10 {
+    left: 83.33333333%;
+  }
+  .push-sm-9 {
+    left: 75%;
+  }
+  .push-sm-8 {
+    left: 66.666666667%;
+  }
+  .push-sm-7 {
+    left: 58.33333333%;
+  }
+  .push-sm-6 {
+    left: 50%;
+  }
+  .push-sm-5 {
+    left: 41.666666667%;
+  }
+  .push-sm-4 {
+    left: 33.33333333%;
+  }
+  .push-sm-3 {
+    left: 25%;
+  }
+  .push-sm-2 {
+    left: 16.666666667%;
+  }
+  .push-sm-1 {
+    left: 8.33333333%;
+  }
+  .pull-sm-12 {
+    right: 100%;
+  }
+  .pull-sm-11 {
+    right: 91.666666667%;
+  }
+  .pull-sm-10 {
+    right: 83.33333333%;
+  }
+  .pull-sm-9 {
+    right: 75%;
+  }
+  .pull-sm-8 {
+    right: 66.666666667%;
+  }
+  .pull-sm-7 {
+    right: 58.33333333%;
+  }
+  .pull-sm-6 {
+    right: 50%;
+  }
+  .pull-sm-5 {
+    right: 41.666666667%;
+  }
+  .pull-sm-4 {
+    right: 33.33333333%;
+  }
+  .pull-sm-3 {
+    right: 25%;
+  }
+  .pull-sm-2 {
+    right: 16.666666667%;
+  }
+  .pull-sm-1 {
+    right: 8.33333333%;
+  }
+}
+/*====================================================
+PANTALLA DE PHONE - EXTRA SMALL (XS)
+=====================================================*/
+@media (max-width: 575px) {
+  .col-xs-12 {
+    width: 100%;
+  }
+  .col-xs-11 {
+    width: 91.666666667%;
+  }
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  .col-xs-9 {
+    width: 75%;
+  }
+  .col-xs-8 {
+    width: 66.666666667%;
+  }
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  .col-xs-6 {
+    width: 50%;
+  }
+  .col-xs-5 {
+    width: 41.666666667%;
+  }
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  .col-xs-3 {
+    width: 25%;
+  }
+  .col-xs-2 {
+    width: 16.666666667%;
+  }
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  .offset-xs-12 {
+    margin-left: 100%;
+  }
+  .offset-xs-11 {
+    margin-left: 91.666666667%;
+  }
+  .offset-xs-10 {
+    margin-left: 83.33333333%;
+  }
+  .offset-xs-9 {
+    margin-left: 75%;
+  }
+  .offset-xs-8 {
+    margin-left: 66.666666667%;
+  }
+  .offset-xs-7 {
+    margin-left: 58.33333333%;
+  }
+  .offset-xs-6 {
+    margin-left: 50%;
+  }
+  .offset-xs-5 {
+    margin-left: 41.666666667%;
+  }
+  .offset-xs-4 {
+    margin-left: 33.33333333%;
+  }
+  .offset-xs-3 {
+    margin-left: 25%;
+  }
+  .offset-xs-2 {
+    margin-left: 16.666666667%;
+  }
+  .offset-xs-1 {
+    margin-left: 8.33333333%;
+  }
+  .push-xs-12 {
+    left: 100%;
+  }
+  .push-xs-11 {
+    left: 91.666666667%;
+  }
+  .push-xs-10 {
+    left: 83.33333333%;
+  }
+  .push-xs-9 {
+    left: 75%;
+  }
+  .push-xs-8 {
+    left: 66.666666667%;
+  }
+  .push-xs-7 {
+    left: 58.33333333%;
+  }
+  .push-xs-6 {
+    left: 50%;
+  }
+  .push-xs-5 {
+    left: 41.666666667%;
+  }
+  .push-xs-4 {
+    left: 33.33333333%;
+  }
+  .push-xs-3 {
+    left: 25%;
+  }
+  .push-xs-2 {
+    left: 16.666666667%;
+  }
+  .push-xs-1 {
+    left: 8.33333333%;
+  }
+  .pull-xs-12 {
+    right: 100%;
+  }
+  .pull-xs-11 {
+    right: 91.666666667%;
+  }
+  .pull-xs-10 {
+    right: 83.33333333%;
+  }
+  .pull-xs-9 {
+    right: 75%;
+  }
+  .pull-xs-8 {
+    right: 66.666666667%;
+  }
+  .pull-xs-7 {
+    right: 58.33333333%;
+  }
+  .pull-xs-6 {
+    right: 50%;
+  }
+  .pull-xs-5 {
+    right: 41.666666667%;
+  }
+  .pull-xs-4 {
+    right: 33.33333333%;
+  }
+  .pull-xs-3 {
+    right: 25%;
+  }
+  .pull-xs-2 {
+    right: 16.666666667%;
+  }
+  .pull-xs-1 {
+    right: 8.33333333%;
+  }
+}
+.body {
+  font-family: inherit ;
+  background-color: #292c2f;
+  font-weight: lighter;
+  color: #ffffff;
+  font-weight: 500;
+}
+.input-text {
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(144, 144, 144, 0.075);
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.65em;
+  font-family: "Lato", Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #8E868D;
+}
+.input-text:focus {
+  all: unset;
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(144, 144, 144, 0.075);
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 1.65em;
+  font-family: "Lato", Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 12px 12px;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #ff7043;
+}
+.buttonBig {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color: transparent;
+  border: 1px solid #ff7043;
+  border-left: 30px solid #ff7043;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  height: 2.85em;
+  line-height: 2.8em;
+  padding: 0 2em;
+  text-align: center;
+  text-decoration: none;
+}
+.buttonBig:hover {
+  background: rgba(255, 112, 67, 0.5);
+}
+.label {
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+.logo {
+  margin-bottom: 30px;
+  margin-top: 100px;
+  width: 100%;
+  height: 50px;
+}
+.titulo {
+  font-size: 40px;
+  white-space: nowrap;
+}
+.custom-select {
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(144, 144, 144, 0.075);
+  border: 1px solid #8E868D;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #ffffff;
+  padding: 0 2em;
+  text-align: left;
+  height: 2.85em;
+  line-height: 2.8em;
+  cursor: pointer;
+}
+.custom-select:hover {
+  border: 1px solid #8E868D;
+}
+.custom-select option {
+  background-color: #292c2f;
+}
+.menu {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: #ffffff;
+  text-align: left;
+  height: 2em;
+  cursor: pointer;
+  margin-top: 30px;
+}
+.menu:hover {
+  border: 1px solid #ff7043;
+  background: rgba(255, 112, 67, 0.5);
+}
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #292c2f;
+}
+.img-small {
+  width: 150px;
+  height: 30px;
+}
+.subtitulo {
+  font-size: 10px;
+  white-space: nowrap;
+}
+.buttonSmall {
+  width: 5px;
+  background-color: transparent;
+  border: 1px solid #ff7043;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+.buttonSmall:hover {
+  background: rgba(255, 112, 67, 0.5);
+}
+.titleScroll {
+  background-color: #484b51;
+  margin-top: 25px;
+  border: 1px solid #ffffff;
+  border-bottom: 0px solid #ffffff;
+}
+.scroll {
+  border-top: 0px solid #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #303136;
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+.tabla {
+  background-color: #99ccff;
+  border: 1px solid #000000;
+  padding: 0 2em;
+  text-align: left;
+  height: 2em;
+  line-height: 2em;
+  cursor: pointer;
+}
+.tablaText {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 0 2em;
+  text-align: left;
+  line-height: 2em;
+  height: 2em;
+}
+.custom-se {
+  width: 100%;
+  margin-top: 20px;
+  background: rgba(144, 144, 144, 0.075);
+  border: 1px solid #8E868D;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  text-align: left;
+  height: 2em;
+  line-height: 2em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.button-clasic {
+  width: 100%;
+  margin-top: 20px;
+  background: #d9d9d9;
+  border: 1px solid #8E868D;
+  font-size: 16px;
+  border-radius: 4px;
+  color: #000;
+  text-align: center;
+  height: 2em;
+  line-height: 2em;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=estilos.css.map */
+

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+ <!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+
+<!--
+     This is a blank Tiles definition file with a commented example.
+-->
+
+
+
+<tiles-definitions>
+	<definition name="common.login.layout" path="/baseLogin.jsp">
+	    <put name="header" value="/header.jsp" />
+	    <put name="loginForm" value="" />
+	</definition>
+	
+	<definition name="common.login.user" extends="common.login.layout">
+	    <put name="loginForm" value="/loginUser.jsp" />
+	</definition>
+	<definition name="common.login.message" extends="common.login.layout">
+	    <put name="loginForm" value="/loginMessage.jsp" />
+	</definition>
+	
+	<definition name="common.login.pss" extends="common.login.layout">
+	    <put name="loginForm" value="/loginPss.jsp" />
+	</definition>
+	
+	
+	<definition name="common.globalapps.layout" path="/baseLayout.jsp">
+	    <put name="header" value="/secureHeader.jsp" />
+	    <put name="contend" value="" />
+	</definition>
+	
+	<definition name="common.globalapps.applications" extends="common.globalapps.layout">
+	    <put name="contend" value="/applicationsList.jsp" />
+	</definition>
+    
+
+</tiles-definitions>
