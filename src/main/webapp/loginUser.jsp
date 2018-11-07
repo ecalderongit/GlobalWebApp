@@ -4,6 +4,33 @@
 		<fmt:setLocale value="es" />
 		<fmt:setBundle basename="com.globalapps.web.common.resources.Resources" />
 		
+		<script>
+		$( document ).ready(function() {
+			$( "#email" ).keypress(function(e) {
+		        if(e.which == 13) {
+		        	validateAndSubmit();
+		        }else{
+		        	$("#loginError").text("");
+		        }
+		    });
+		});
+		function validateAndSubmit(){
+			
+			if($("#email").val() != ''){
+				if(isEmail($("#email").val())){
+					document.getElementById('loginForm').submit();
+				}else{
+					$("#loginError").text("<fmt:message key = "common.app.login.errorCode.lgn01"/>");
+					$("#email").focus();
+				}
+			}else{
+				$("#loginError").text("<fmt:message key = "common.app.login.errorCode.lgn01"/>");
+				$("#email").focus();
+			}
+		}
+			
+		</script>
+		
 		<!-- Main Slider Section -->
 			<section class="page_content_main_slider clearfix"
 				style="background-image: url(images/slider_slide_5.jpg); height: 650px;"
@@ -15,13 +42,15 @@
 							style="background-color: #b0b1b1; background-image: url(images/login_logo.png); background-size: contain; background-repeat: no-repeat;">
 						</figure>
 						<div class="flex-item" style="height: 50px; text-align: center;">
-							<input class="form_inputs login-input" type="email" name="email" placeholder="e-mail@example.com">
-							<input class="login-btn" type="button" id="goButon" name="go" value="GO" onclick="document.getElementById('loginForm').submit();" >
-							<c:if test = "${not empty errorCode}">
-						        <div class="loginErrorContainer">
-									<p class="loginError"><fmt:message key = "common.app.login.errorCode.${errorCode}"/></p>
-								</div>
-						    </c:if>
+							<input class="form_inputs login-input" type="email" name="email" id="email" placeholder="example@e-mail.com">
+							<input class="login-btn" type="button" id="goButon" name="go" value="GO" onclick="validateAndSubmit()" >
+							<div class="loginErrorContainer">
+								<p class="loginError" id="loginError">
+									<c:if test = "${not empty errorCode}">
+											<fmt:message key = "common.app.login.errorCode.${errorCode}"/>
+								    </c:if>
+						    	</p>
+						    </div>
 						</div>
 					</div>
 				</form>	

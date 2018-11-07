@@ -21,6 +21,8 @@
 
 <meta name="author" content="">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/globalapp_util.js"></script>
+
 		
 <title><fmt:message key="common.app.title" /></title>
 <!-- <link rel="stylesheet" href="css/estilos.css"> -->
