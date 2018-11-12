@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <config>
-	<param name="securityCodeLength" value="5"/>
+	<param name="securityCodeLength" value="6"/>
 	<param name="maxLoginRetry" value="3"/>
 	<param name="passCodeExpirationTime" value="120000"/>
 	<param name="sessionInactiveExpirationTime" value="300000"/>
-	<param name="sessionExpirationTime" value="1800000"/>
+	<param name="sessionExpirationTime" value="31800000"/>
 	<param name="securityCodeTemplatePath" value="/WEB-INF/templates/securityCode.html"/>
 	
 </config>

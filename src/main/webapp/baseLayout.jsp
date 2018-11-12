@@ -80,6 +80,9 @@
 			</div>
 		</div>
 	</div>
+	
+	
+	
 	<section class="page_content_parent_section">
 		<!-- Header Section -->
 		<header>
@@ -94,6 +97,10 @@
 		<!-- /Header Section -->
 
 	</section>
+	
+	
+	
+	
 	<!-- <div class="container">
 	         		<div class="row">
 	         		<div  class="col-xs-10  col-sm-6  col-md-2 col-lg-2 offset-xs-1  offset-sm-3  offset-md-5 offset-lg-5">
@@ -124,6 +131,30 @@
 					</div>
 			</form>	
 		</div> -->
+		
+		
+		
+		
+		
+		
+		
+		
+		<section>
+		<!-- footer Section -->
+		<footer>
+			<tiles:insert attribute="footer"/>
+		</footer>
+		<!-- /footer Section -->
+	    </section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
 
 	<!-- jQuery 2.2.0-->
 	<script src="js/jquery.js"></script>

@@ -12,17 +12,20 @@
 
 
 <tiles-definitions>
+
 	<definition name="common.login.layout" path="/baseLogin.jsp">
 	    <put name="header" value="/header.jsp" />
 	    <put name="loginForm" value="" />
+	    <put name="footer" value="/footer.jsp" />
 	</definition>
 	
 	<definition name="common.login.user" extends="common.login.layout">
 	    <put name="loginForm" value="/loginUser.jsp" />
 	</definition>
-	<definition name="common.login.message" extends="common.login.layout">
+	
+	<!-- <definition name="common.login.message" extends="common.login.layout">
 	    <put name="loginForm" value="/loginMessage.jsp" />
-	</definition>
+	</definition> -->
 	
 	<definition name="common.login.pss" extends="common.login.layout">
 	    <put name="loginForm" value="/loginPss.jsp" />
@@ -32,6 +35,7 @@
 	<definition name="common.globalapps.layout" path="/baseLayout.jsp">
 	    <put name="header" value="/secureHeader.jsp" />
 	    <put name="contend" value="" />
+	    <!--   <put name="footer" value="/footer.jsp" />  -->
 	</definition>
 	
 	<definition name="common.globalapps.applications" extends="common.globalapps.layout">
