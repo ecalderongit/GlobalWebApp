@@ -47,6 +47,7 @@ a {
 }
 a:active,
 a:hover {
+	
   outline: 0;
 }
 abbr[title] {
@@ -6509,7 +6510,7 @@ button.close {
 .panel-body:after,
 .modal-header:after,
 .modal-footer:after {
-  clear: both;
+
 }
 .center-block {
   display: block;

@@ -1,4 +1,3 @@
-
 			<!-- Navbar Section -->
 			
 			
@@ -45,7 +44,18 @@
 					</div>
 					
 					
-				
+					<ul class="nav navbar-nav ml-auto">
+                    <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"> 
+                      
+                    <img src="images/userAvatar.png" class="dropdown-image"></a>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                        <a class="dropdown-item" role="presentation" href="#">Salir</a>
+                       <!-- <a class="dropdown-item" role="presentation" href="#" >Payments </a>
+                        <a class="dropdown-item" role="presentation" href="#" >Logout </a>-->
+                        </div>
+                    </li>
+                </ul>
+					
 					
 					
 				</div>
@@ -56,6 +66,3 @@
   
 
 			<!-- /Navbar Section -->
-
-
-	

@@ -35,11 +35,13 @@
 	<definition name="common.globalapps.layout" path="/baseLayout.jsp">
 	    <put name="header" value="/secureHeader.jsp" />
 	    <put name="contend" value="" />
-	    <!--   <put name="footer" value="/footer.jsp" />  -->
+	    <put name="footer" value="" /> 
 	</definition>
 	
 	<definition name="common.globalapps.applications" extends="common.globalapps.layout">
+		<put name="header" value="/headerApp.jsp" />
 	    <put name="contend" value="/applicationsList.jsp" />
+	    <put name="footer" value="/footer.jsp" /> 
 	</definition>
     
 

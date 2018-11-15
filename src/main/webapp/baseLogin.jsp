@@ -67,6 +67,11 @@
 <!--Style CSS Propio de GlobalAppsSolutions-->
     <link rel="stylesheet" href="css/globalapps-style.css">
     
+    <link rel="stylesheet" href="css/Pretty-Header.css">
+    
+    
+
+    
 </head>
 <!-- <body class="body"> -->
 <body data-spy="scroll" data-target=".navbar" data-offset="50" id="body"
@@ -82,23 +87,16 @@
 	</div>
 	
 					<section class="page_content_parent_section">
-						<!-- Header Section -->
 							<header>
 								<tiles:insert attribute="header"/>
 								<tiles:insert attribute="loginForm"/>
 							</header>
-						<!-- /Header Section -->
 					</section>
 	
-						
-												
-
-					<section class="page_content_parent_section">
-							<!-- footer Section -->
-								<footer>
-									<tiles:insert attribute="footer"/>
-								</footer>
-							<!-- /footer Section -->
+					<section>
+						<footer>
+							<tiles:insert attribute="footer"/>
+						</footer>
 					</section>
 	    
 	    

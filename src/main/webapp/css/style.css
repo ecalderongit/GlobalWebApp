@@ -464,6 +464,7 @@ body {
 .navbar .navbar-nav {
     margin-right: 5px;
     height: 50px;
+    float:right;
 }
 .navbar .navbar-header .navbar-brand {
     width: 140px;
@@ -509,7 +510,7 @@ body {
     position: relative;
     top:50%;
     -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-20%);
 
 }
 .navbar .navbar-nav li a {
@@ -944,6 +945,8 @@ body.pushmenu-push-toLeft{
 
 .index-light .navbar .navbar-nav li a{
     font-weight: 500;
+    text-decoration: none;
+    display:block;
 }
 
 .index-only-side-nav .navbar-brand{
