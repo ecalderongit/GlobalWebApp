@@ -20,9 +20,10 @@ public class LogoutAction extends BaseAction {
 	   
 	   ActionForward forward = mapping.findForward(WELCOME_FORWARD);
 	   
-	   request.getSession(false).setAttribute(USER_SESSION_INFO, null);
+		request.getSession(false).setAttribute(USER_SESSION_INFO, null);
 	   request.setAttribute(MESSAGE_CODE, LOGOUT_SUCCESS_MESSAGE);
 	   
+	     
 	   return forward;
 	}
 }
