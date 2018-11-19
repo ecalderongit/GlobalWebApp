@@ -5,9 +5,9 @@
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://serversql:port/database</property>
-        <property name="hibernate.connection.username">user</property>
-        <property name="hibernate.connection.password">pass</property>
+        <property name="hibernate.connection.url">jdbc:mysql://35.238.239.6:3306/baseapp</property>
+        <property name="hibernate.connection.username">ecalderon</property>
+        <property name="hibernate.connection.password">Global01</property>
 
         <mapping resource="Credential.hbm.xml" />
         <mapping resource="EmailTemplate.hbm.xml" />
