@@ -1,1 +1,15 @@
-/.apt_generated/
+
+BaseAction.java
+GetAvatarAction.java
+properties.xml
+mailserver-config.xml
+
+
+
+apt_generated
+settings
+target
+src/main/resources/hibernate.cfg.xml
+cfg.xml
+
+
