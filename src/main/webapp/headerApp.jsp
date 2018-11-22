@@ -1,3 +1,5 @@
+			
+			<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
 			<!-- Navbar Section -->
 			
 			
@@ -47,8 +49,8 @@
 					<ul class="nav navbar-nav ml-auto">
                     <li class="dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"> 
                     
-                    <img src="/globalapp/getAvatar.do" class="dropdown-image"></a>
-                        <div class="dropdown-menu dropdown-menu-right" role="menu">/
+                    <img  style="background-color: #e2dfde;"  src="<c:choose><c:when test="${not empty userSessionInfo.credential.avatar}">/globalapp/getAvatar.do</c:when><c:otherwise>images/userAvatar.png</c:otherwise></c:choose>" class="dropdown-image"></a>
+                        <div class="dropdown-menu dropdown-menu-right" role="menu">
                         <a class="dropdown-item" role="presentation" href="/globalapp/logout.do" value="01">Salir</a>
                        <!-- <a class="dropdown-item" role="presentation" href="#" >Payments </a>
                         <a class="dropdown-item" role="presentation" href="#" >Logout </a>-->

@@ -94,3 +94,22 @@
 }
     
     
+.loginMessage{
+margin-top: 20px;
+   color: #00cc00;
+}
+.loginMessageContainer{
+width: 500px;
+}
+
+
+.footerFontStyle{
+margin-top: 20px;
+   color: #FF3700;
+   font-size: 15px;
+}
+.footerFontStyle-app{
+margin-top: 20px;
+   color: #607D8B;
+   font-size: 15px;
+}

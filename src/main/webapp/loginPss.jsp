@@ -5,8 +5,21 @@
 					<section class="page_content_main_slider clearfix" style="background-image: url(images/slider_slide_5.jpg); height: 650px;" id="home">
 						<form action="/globalapp/login.do" id="loginForm" method="post">
 							<div class="flex-content" style="margin-top: 180px; height: 300px; width: 100%; z-index: 9999 !important">
+							
+							
+							
+							
+						
+     
+     
+     
+								<img style="background-color: #e2dfde;" class="flex-item log-photo " src="<c:choose><c:when test="${not empty credential.avatar}">/globalapp/getAvatar.do</c:when><c:otherwise>images/userAvatar.png</c:otherwise></c:choose>"/>												
 								
-								<img class="flex-item log-photo" src="/globalapp/getAvatar.do"/>
+								
+								
+								<c:if test = ""></c:if>
+								
+								
 								<div class="flex-item" style="height: 50px; text-align: center;">
 									<input class="form_inputs login-input" type="password" name="securityCode" placeholder="password">
 									<input class="login-btn" type="button" name="go" value="GO" onclick="document.getElementById('loginForm').submit();" >

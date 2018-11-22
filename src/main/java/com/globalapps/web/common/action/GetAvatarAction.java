@@ -25,22 +25,11 @@ public class GetAvatarAction extends ImageGetterBaseAction {
 	   }
 	   
 	   if(credential.getAvatar() == null){
-		   
-		   File archivo = new File ("/images/userAvatar.png");
-		   
-		  
-		   byte[] fileContent = Files.readAllBytes(archivo.toPath());
-		   
-		   byte[] array = Files.readAllBytes(new File("/images/headerApp.jsp").toPath());
-		  
-		
-	   }else {
+
 		   response.getOutputStream().write(credential.getAvatar());
+
 	   }
-	   
 	   response.getOutputStream().write(credential.getAvatar());
    }
- 
-   
-   
+
 }

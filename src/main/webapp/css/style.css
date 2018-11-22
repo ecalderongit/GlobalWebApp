@@ -947,6 +947,7 @@ body.pushmenu-push-toLeft{
     font-weight: 500;
     text-decoration: none;
     display:block;
+    text-align: center;
 }
 
 .index-only-side-nav .navbar-brand{

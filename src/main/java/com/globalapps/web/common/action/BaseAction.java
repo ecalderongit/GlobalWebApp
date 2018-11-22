@@ -18,7 +18,7 @@ public abstract class BaseAction extends Action {
 	public static final String ERROR_CODE = "errorCode";
 	public static final String FAILURE = "failure";
 	public static final String SUCCESS = "success";
-	public static final String USER_CREDENTIAL_KEY = "success";
+	public static final String USER_CREDENTIAL_KEY = "credential";
 	
    public ActionForward execute(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
 	   
