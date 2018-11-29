@@ -43,6 +43,11 @@
 	    <put name="contend" value="/applicationsList.jsp" />
 	    <put name="footer" value="/footer.jsp" /> 
 	</definition>
+	<definition name="common.globalapps.myProfile" extends="common.globalapps.layout">
+		<put name="header" value="/headerApp.jsp" />
+	    <put name="contend" value="/myProfile.jsp"/>
+	    <put name="footer" value="/footer.jsp" /> 
+	</definition>
     
 
 </tiles-definitions>

@@ -9,10 +9,19 @@ $( "#email" ).keypress(function(e) {
        if(e.which == 13) {
        	validateAndSubmit();
        }else{
-       	$("#loginError").text("");
+       	$("#loginMessage").text("");
        }
    });
 });
+$( document ).ready(function() {
+	$( "#email" ).keypress(function(e) {
+	       if(e.which == 13) {
+	       	validateAndSubmit();
+	       }else{
+	       	$("#loginError").text("");
+	       }
+	   });
+	});
 
 function validateAndSubmit(){
 
@@ -32,14 +41,12 @@ $("#email").focus();
 </script>
 
 <!-- Main Slider Section -->
-<section class="page_content_main_slider clearfix"
-style="background-image: url(images/slider_slide_5.jpg); height: 650px;"
-id="home">
+<section class="page_content_main_slider clearfix" id="home">
 <form  action="/globalapp/showLogin.do" id="loginForm" method="post">
 <div class="flex-content"
-style="margin-top: 180px; height: 300px; width: 100%; z-index: 9999 !important">
+style="margin-top: 80px; height: 300px; width: 100%; z-index: 9999 !important">
 <figure class="flex-item log-photo"
-style="background-color: #e2dfde; background-image: url(images/userAvatar.png); background-size: contain; background-repeat: no-repeat;">
+style="background-color: #fff; background-image: url(images/userAvatar.png); background-size: contain; background-repeat: no-repeat;">
 </figure>
 <div class="flex-item" style="height: 50px; text-align: center;">
 <input class="form_inputs login-input" type="email" name="email" id="email" placeholder="example@e-mail.com">
@@ -51,11 +58,6 @@ style="background-color: #e2dfde; background-image: url(images/userAvatar.png); 
    </c:if>
    	</p>
    </div>
-   
-   
-   
- 
-   
    
    
    <div class="loginMessageContainer">

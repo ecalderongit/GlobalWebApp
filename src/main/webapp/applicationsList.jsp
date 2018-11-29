@@ -5,7 +5,7 @@
 		<fmt:setBundle basename="com.globalapps.web.common.resources.Resources" />
 		
 		<body style="color:grey; ">
-		<div style=" padding:300px; text-align: center; color:#ff0066; background-color:#e6e6e6;">
+		<div style=" padding:300px; text-align: center; color:#ff0066;">
 		
 		<h2> Pagina principal GlobalApps.</h2>
 		

@@ -74,45 +74,38 @@
     
 </head>
 <!-- <body class="body"> -->
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="body"
-	class="index-light">
-	<div class="loader">
-		<div class="loader-inner">
-			<div class="spinner">
-				<div class="dot1"></div>
-				<div class="dot2"></div>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50" id="body" style="background-color:#e6e6e6;"
+		class="index-light">
+		
+			<div class="loader">
+					<div class="loader-inner">
+						<div class="spinner">
+							<div class="dot1"></div>
+							<div class="dot2"></div>
+						</div>
+					</div>
+				</div>
+	
+				<section class="page_content_parent_section">
+					<header>
+						<tiles:insert attribute="header"/>	
+					</header>
+				</section>
+				
+			<div class="page_contend_max_section">
+				
+				<section>
+					<contend>
+						<tiles:insert attribute="contend"/>
+					</contend>
+	  		  </section>
 			</div>
-		</div>
-	</div>
-	
-	
-	
-	<section class="page_content_parent_section">
-			<header>
-				<tiles:insert attribute="header"/>	
-			</header>
-	</section>
-		
-		
-		<section>
-			<contend>
-				<tiles:insert attribute="contend"/>
-			</contend>
-	    </section>
 
 		<section>
 			<footer>
 				<tiles:insert attribute="footer"/>
 			</footer>
 	    </section>
-		
-		
-		
-		
-		
-		
-		
-		
 		
 
 	<!-- jQuery 2.2.0-->

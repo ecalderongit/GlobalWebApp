@@ -1,8 +1,0 @@
-<?xml version="1.0"?>
-<mailsenders>
-<<<<<<< HEAD
-	<mail-sender id="default" emisormail="rrhh@globalappssolutions.com" pass="muyfacil01" port="587" smtpmail="smtp.gmail.com"/>
-=======
-	<mail-sender id="default" emisormail="email@iserver.net" pass="pass" port="587" smtpmail="smtp.gmail.com"/>
->>>>>>> 8bf7cec0272b9e827c3031f878a14e893012647e
-</mailsenders>

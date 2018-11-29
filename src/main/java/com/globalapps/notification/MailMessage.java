@@ -54,8 +54,4 @@ public class MailMessage {
 		params.put(name, value);
 	}
 	
-	
-	
-	
-	
 }

@@ -7,6 +7,7 @@ public class Credential {
 	private long passCodeGenerationTime;
 	private int retryAccount = 0;
 	private String status = "I";
+	private String name;
 	private byte[] avatar;
 	private boolean isValid;
 	
@@ -18,6 +19,13 @@ public class Credential {
 	}
 	public Credential(){
 		super();
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
 	}
 	public int getPassCode() {
 		return passCode;

@@ -2,7 +2,7 @@
 		
 		
 
-    <footer class="footer_section big_padding bg_navy" style="padding-top: 50px; padding-bottom: 50px; background-color: #fff;">
+    <footer class="footer_section big_padding bg_navy" style="padding-top: 30px; padding-bottom: 30px; background-color: #fff;">
         <div class="container"style="text-align: center;">
             <div class="footer_detail">
                       

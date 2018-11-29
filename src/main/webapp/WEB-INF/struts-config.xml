@@ -33,6 +33,9 @@
             <forward name="success" path="common.globalapps.applications" redirect="true"/>       
         </action>
         
+         <action  path="/myProfile" type="com.globalapps.web.common.action.ShowHomeAction">
+            <forward name="success" path="common.globalapps.myProfile" redirect="true"/>       
+        </action>
         
         <action  path="/logout" name="loginForm" type="com.globalapps.web.login.action.LogoutAction"/>
         
