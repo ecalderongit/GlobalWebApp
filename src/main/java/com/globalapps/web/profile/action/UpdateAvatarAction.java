@@ -1,0 +1,33 @@
+package com.globalapps.web.profile.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+
+import com.globalapps.security.jpa.repository.CredentialRepository;
+import com.globalapps.web.common.action.SecureBaseAction;
+import com.globalapps.web.common.bean.AppSession;
+import com.globalapps.web.profile.form.ProfileForm;
+
+
+public class UpdateAvatarAction extends SecureBaseAction {
+
+	@Override
+	public ActionForward executeSecureAction(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		ProfileForm profileForm = (ProfileForm) form;
+		AppSession userSession = (AppSession) request.getSession(false).getAttribute(USER_SESSION_INFO);
+		
+		if(userSession.getCredential() != null){
+			userSession.getCredential().setAvatar(profileForm.getAvatar().getFileData());
+			 CredentialRepository credentialRepo = new CredentialRepository();
+			
+			 credentialRepo.update(userSession.getCredential());
+		 
+		}
+		
+		return mapping.findForward(SUCCESS);
+	}
+}

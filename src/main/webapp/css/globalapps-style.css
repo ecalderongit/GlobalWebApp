@@ -145,6 +145,7 @@ margin-top: 20px;
 }
 .myProfile-avatarContainer{
 	display: block;
+	text-align: center;
 	background-color: #e6e6e6;
 	background-size: contain;
 	box-sizing: border-box;
@@ -154,10 +155,14 @@ margin-top: 20px;
 	width: 170px;
 	margin-top: 25px;
 	margin: auto;
+	position: relative;
 }
-.myProfile-avatarContainer:hover {
+
+.myProfile-avatarContainer:hover:not(#subirAvatar) {
 	filter: opacity(.5);
-	}
+	cursor: pointer;
+	
+}
 #linea {
 	margin-top: 0;
 	float: left;
@@ -176,4 +181,19 @@ margin-top: 20px;
 	border:  #fff 2px solid;
 	border-radius: 7px;
 	color:#607D8B;
+}
+.Profile-gbtn{
+	margin: auto;
+	border-radius: 10px;
+	border: solid 2px #ffff;
+	background-color: #ffff;
+	color: #607D8B;
+	display: none;
+	position:absolute;
+    bottom: 0;
+    right: 60px;
+}
+.Profile-gbtn:hover {
+		filter: opacity(.5);
+		cursor: pointer;
 }

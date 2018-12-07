@@ -68,8 +68,6 @@
 <!--Style CSS Propio de GlobalAppsSolutions-->
     <link rel="stylesheet" href="css/globalapps-style.css">
     
-    <link rel="stylesheet" href="assets/css/Pretty-Header.css">
-    
      <link rel="stylesheet" href="css/Pretty-Header.css">
     
 </head>

@@ -8,6 +8,7 @@
 <struts-config>
     <form-beans>
     	<form-bean name="loginForm" type="com.globalapps.web.login.form.LoginForm"/>
+    	<form-bean name="profileForm" type="com.globalapps.web.profile.form.ProfileForm"/>
     </form-beans>
     
     
@@ -39,6 +40,9 @@
         
         <action  path="/logout" name="loginForm" type="com.globalapps.web.login.action.LogoutAction"/>
         
+        <action  path="/updateAvatar" name="profileForm" type="com.globalapps.web.profile.action.UpdateAvatarAction">
+            <forward name="success" path="/myProfile.do" redirect="true"/>       
+        </action>
         <action  path="/getAvatar" type="com.globalapps.web.common.action.GetAvatarAction"/>
         <action  path="/getLogo" type="com.globalapps.web.common.action.GetLogoAction"/>
         
