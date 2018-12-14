@@ -26,7 +26,7 @@
 		border:1px solid #607D8B;
 		border-radius: 50px;
 		background: #fff;
-		/* outline:none, es para eliminar la linea asul que tienen los inputs por defecto.*/
+		/* outline:none, es para eliminar la linea azul que tienen los inputs por defecto.*/
 		outline: none;
 		
 		display: inline-block;
@@ -157,11 +157,28 @@ margin-top: 20px;
 	margin: auto;
 	position: relative;
 }
-
-.myProfile-avatarContainer:hover:not(#subirAvatar) {
-	filter: opacity(.5);
-	cursor: pointer;
-	
+.leyendaAvatar{
+	margin: auto; 
+	font-size: small;
+	margin-top: 49%; 
+	display: none;
+	background-color: #fff;
+	width: max-content; 
+	border-radius: 5px;
+	color:#607D8B;
+}
+.Profile-gbtn{
+	margin: auto;
+	margin-top: 25%;
+	font-size: small;
+	border-radius: 10px;
+	border: solid 1px #607D8B;
+	background-color: #ffff;
+	color: #607D8B;
+	display: none;
+}
+.Profile-gbtn span::after{
+	content: "..."
 }
 #linea {
 	margin-top: 0;
@@ -182,18 +199,24 @@ margin-top: 20px;
 	border-radius: 7px;
 	color:#607D8B;
 }
-.Profile-gbtn{
-	margin: auto;
-	border-radius: 10px;
-	border: solid 2px #ffff;
-	background-color: #ffff;
-	color: #607D8B;
-	display: none;
-	position:absolute;
-    bottom: 0;
-    right: 60px;
+
+     /* -->Hover de objetos.<-- */
+
+.myProfile-avatarContainer:hover {
+	filter: opacity(.5);
+	cursor: pointer;
+}
+
+.myProfile-avatarContainer:hover  #leyendaAvatar {
+	display: block;
+	
+}
+.myProfile-avatarContainer:hover  .Profile-gbtn {
+	display: block;
 }
 .Profile-gbtn:hover {
-		filter: opacity(.5);
-		cursor: pointer;
+		cursor: pointer;		
 }
+.Profile-gbtn:hover span::after{
+	content: "Avatar por Defecto";
+	}

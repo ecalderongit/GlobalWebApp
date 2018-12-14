@@ -10,15 +10,18 @@
 		<div class="myProfile-container">
 		<form action="/globalapp/updateAvatar.do" id="ProfileForm" method="post" enctype="multipart/form-data">
 			<label for="nuevo_avatar" style="display: flex;">
-			
-			<div class="myProfile-avatarContainer"
+				
+				<div class="myProfile-avatarContainer"
 				style="background-image: url(<c:choose><c:when test="${not empty userSessionInfo.credential.avatar}">/globalapp/getAvatar.do</c:when><c:otherwise>images/userAvatar.png</c:otherwise></c:choose>);
 						background-repeat: no-repeat;
-					    background-position: center; ">
+					    background-position: center; "> 
+				<div id="leyendaAvatar" class="leyendaAvatar">Cambiar Avatar</div>
+				<button class="Profile-gbtn" type="button" id="Profile-gbtn"   onclick="defaultAvatar();" ><span></span></button>
+				
 			</div>
-			
+				<input id="nuevo_avatar" name="avatar" type="file"  accept="image/*" data-max-size="2048" onchange="changeAvatar();"  style="display: none;"/>
 			</label>
-			<input id="nuevo_avatar" name="avatar" type="file"  accept="image/*" data-max-size="2048" onchange="changeAvatar();"  style="display: none;"/>
+				
 			</br>
 			
 				<div class= "myProfile-profileData">
@@ -33,6 +36,10 @@
 			
 			
 	<script>
+		function defaultAvatar(){
+			$("#ProfileForm").submit();
+
+		}
 		function changeAvatar(){
 			$("#ProfileForm").submit();
 		}

@@ -6,7 +6,13 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
+import org.hibernate.Criteria;
+import org.hibernate.Session;
+import org.hibernate.criterion.Restrictions;
 
+
+import com.globalapps.common.jpa.repository.DataBaseConnection;
+import com.globalapps.security.Credential;
 import com.globalapps.security.jpa.repository.CredentialRepository;
 import com.globalapps.web.common.action.SecureBaseAction;
 import com.globalapps.web.common.bean.AppSession;
@@ -20,13 +26,15 @@ public class UpdateAvatarAction extends SecureBaseAction {
 		ProfileForm profileForm = (ProfileForm) form;
 		AppSession userSession = (AppSession) request.getSession(false).getAttribute(USER_SESSION_INFO);
 		
-		if(userSession.getCredential() != null){
+		CredentialRepository credentialRepo = new CredentialRepository();
+		
+		if(profileForm.getAvatar() != null & profileForm.getAvatar().getFileData().length != 0){
 			userSession.getCredential().setAvatar(profileForm.getAvatar().getFileData());
-			 CredentialRepository credentialRepo = new CredentialRepository();
-			
-			 credentialRepo.update(userSession.getCredential());
-		 
+		}else{
+			userSession.getCredential().setAvatar(null);
 		}
+		
+		credentialRepo.update(userSession.getCredential());
 		
 		return mapping.findForward(SUCCESS);
 	}
