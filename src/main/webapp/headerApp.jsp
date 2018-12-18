@@ -1,5 +1,7 @@
 			
 			<%@ taglib uri = "http://java.sun.com/jsp/jstl/core" prefix = "c" %>
+			
+			<%@ taglib uri = "com.global.apps.util.tld" prefix = "g" %>
 			<!-- Navbar Section -->
 			
 			
@@ -51,7 +53,9 @@
 		                    
 		                    <img  style="background-color: #fff;"  src="<c:choose><c:when test="${not empty userSessionInfo.credential.avatar}">/globalapp/getAvatar.do</c:when><c:otherwise>images/userAvatar.png</c:otherwise></c:choose>" class="dropdown-image"></a>
 		                        <div class="dropdown-menu dropdown-menu-right" role="menu">
-		                        <a class="dropdown-item" role="presentation" href="/globalapp/myProfile.do" value="01">Mi perfil</a>
+		                        <g:hasAccess credential="${userSessionInfo.credential}" rules="ALL">
+		                        	<a class="dropdown-item" role="presentation" href="/globalapp/myProfile.do" value="01">Mi perfil</a>
+		                        </g:hasAccess>
 		                        <a class="dropdown-item" role="presentation" href="/globalapp/showHome.do" value="01">Inicio</a>
 		                        <a class="dropdown-item" role="presentation" href="/globalapp/logout.do" value="01">Salir</a>
 		                        

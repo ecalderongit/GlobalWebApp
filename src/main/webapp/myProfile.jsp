@@ -28,7 +28,7 @@
 				
 						<p style="font-size: 30px;"><c:out value = "${userSessionInfo.credential.name}"/></p>
 						<hr id= "linea"/>
-						<p><c:out value = "${userSessionInfo.credential.email}"/></p>
+						<a href="" style= " color: #607D8B; text-decoration: none;"><c:out value = "${userSessionInfo.credential.email}"/></a>
 						
 				</div>
 			</form>

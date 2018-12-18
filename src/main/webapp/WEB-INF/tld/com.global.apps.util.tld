@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+  "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>global-apps-common</short-name>
+	<display-name>TLD global.apps.web</display-name>
+	<description>Libreria de etiquetas de Global Apps.</description>
+	<validator>
+		<validator-class>org.apache.taglibs.standard.tlv.JstlFmtTLV</validator-class>
+		<init-param>
+			<param-name>expressionAttributes</param-name>
+			<param-value>hasAccess:credential hasAccess:rules</param-value>
+			<description>Whitespace-separated list of colon-separated token pairs describing tag:attribute combinations that accept expressions. The validator uses this information to determine which attributes need their syntax validated.</description>
+		</init-param>
+	</validator>
+	
+	<tag>
+		<name>hasAccess</name>
+		<tag-class>com.globalapps.common.tld.HasAccessTag</tag-class>
+		<body-content>JSP</body-content>
+		<description>Muestra el contenido del tag si el usuario tiene el o los accesos especificados.</description>
+		<attribute>
+			<name>credential</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>Credencial del usuario a evaluar</description>
+		</attribute>
+		<attribute>
+			<name>rules</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+			<description>Reglas de validacion del acceso. Se pueden incluir múltiples accesos utilizando los operadores &amp;&amp; (AND) y || (OR), sin embargo no se pueden mezclar operadores o utilizar paréntesis.</description>
+		</attribute>
+	</tag>
+</taglib>

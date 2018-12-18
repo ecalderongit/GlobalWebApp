@@ -23,7 +23,14 @@
    
     
     <jsp-config>
-		
+		<taglib>
+			<taglib-uri>com.global.apps.util.tld</taglib-uri>
+			<taglib-location>/WEB-INF/tld/com.global.apps.util.tld</taglib-location>
+		</taglib>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<el-ignored>true</el-ignored>
+		</jsp-property-group>
 	</jsp-config>
     <servlet-mapping>
         <servlet-name>action</servlet-name>

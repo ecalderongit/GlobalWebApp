@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<links>
+	<link>
+		<url>ejemplo.do</url>
+		<condition>ALL</condition>
+		<labelKey>global.apps.web.ejemplo</labelKey>
+	</link>
+</links>
