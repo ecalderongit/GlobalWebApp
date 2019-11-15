@@ -1,2 +1,0 @@
-src/main/webapp/WEB-INF/resources/config/notification/mail/mailserver-config.xml
-src/main/resources/hibernate.cfg.xml
