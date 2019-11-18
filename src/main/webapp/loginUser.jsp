@@ -45,28 +45,33 @@ $("#email").focus();
 <form  action="/globalapp/showLogin.do" id="loginForm" method="post">
 <div class="flex-content"
 style="margin-top: 80px; height: 300px; width: 100%; z-index: 9999 !important">
+
+		<div  style="width: 229px; display:block; margin: 0 auto; ">
 <figure class="flex-item log-photo"
-style="background-color: #fff; background-image: url(images/userAvatar.png); background-size: contain; background-repeat: no-repeat;">
+			style="background-color: #fff; background-image: url(images/userAvatar.png); background-size: contain; background-repeat: no-repeat; margin: 0 auto;">
 </figure>
-<div class="flex-item" style="height: 50px; text-align: center;">
-<input class="form_inputs login-input" type="email" name="email" id="email" placeholder="example@e-mail.com">
+
+			<div style="width: 229px;  display:block; margin: 0 auto;">
+			<div style="margin: 0 auto; display: inline-block;  ">
+			<div class="flex-item">
+				<input class="form_inputs login-input" type="email" name="email" id="email" placeholder="example@e-mail.com" style="float: left;">
 <input class="login-btn" type="button" id="goButon" name="go" value="GO" onclick="validateAndSubmit()" >
 <div class="loginErrorContainer">
-<p class="loginError" id="loginError">
+					<p class="loginError" id="loginError" style="padding-left: 50px;">
 <c:if test = "${not empty errorCode}">
 <fmt:message key = "common.app.login.errorCode.${errorCode}"/>
-   </c:if>
-   	</p>
+					</c:if></p>
    </div>
    
-   
    <div class="loginMessageContainer">
-<p class="loginMessage" id="loginMessage">
+					<p class="loginMessage" id="loginMessage" style="padding-left: 50px;">
 <c:if test = "${not empty messageCode}">
 <fmt:message key = "common.app.login.messageCode.${messageCode}"/>
-   </c:if>
+					   </c:if></p>
+					   </div>
    
-   	</p>
+		   </div>
+		   </div>
    </div>
 </div>
 </div>
